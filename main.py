@@ -1,10 +1,7 @@
 # Print game grid
-grid = [["-" for x in range(3)] for y in range(3)]
-for line in grid:
-    for x in line:
-        print(x, end=" ")
-    print()
-
+grid = ["-" for x in range(9)]
+for index, value in enumerate(grid):
+    print(value, end=" ") if index % 3 != 2 else print(value)
 
 # Take user input
 userSelection = -1
